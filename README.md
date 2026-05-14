@@ -67,6 +67,21 @@ FFMPEG_PATH=C:/path/to/ffmpeg.exe
 python main.py
 ```
 
+### 🐳 Running with Docker
+
+The easiest way to run Nexus DL is using Docker, which comes with FFmpeg pre-installed:
+
+1. **Using Docker Compose (Recommended)**:
+   ```bash
+   docker-compose up -d --build
+   ```
+
+2. **Using Docker CLI**:
+   ```bash
+   docker build -t nexus-dl .
+   docker run -p 8000:8000 --env-file .env -v $(pwd)/downloads:/app/downloads nexus-dl
+   ```
+
 Open [http://localhost:8000](http://localhost:8000) in your browser.
 
 ## 📁 Project Structure

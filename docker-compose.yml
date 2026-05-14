@@ -1,0 +1,11 @@
+services:
+  nexus-dl:
+    build: .
+    container_name: nexus-dl
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./downloads:/app/downloads
+    env_file:
+      - .env
+    restart: always
