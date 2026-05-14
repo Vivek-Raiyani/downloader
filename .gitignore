@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.venv/
+venv/
+ENV/
+
+# Project Specific
+downloads/
+*.mp4
+*.mkv
+*.webm
+*.part
+*.ytdl
+
+# FFmpeg
+ffmpeg
+ffmpeg.exe
+ffprobe.exe
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

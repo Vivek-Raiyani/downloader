@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Downloader | YT, TikTok, Insta</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Nexus DL</h1>
+            <p class="subtitle">High-speed media downloader for modern platforms</p>
+            
+            <div class="input-group">
+                <input type="text" id="urlInput" placeholder="Paste link here (YouTube, TikTok, Instagram)..." autocomplete="off">
+            </div>
+            
+            <button id="downloadBtn">Start Download</button>
+            
+            <div id="statusCard" class="status-card">
+                <div class="status-text">
+                    <span id="statusLabel" class="status-label">Initializing...</span>
+                    <span id="statusPercent" class="status-percent">0%</span>
+                </div>
+                <div class="progress-container">
+                    <div id="progressBar" class="progress-bar"></div>
+                </div>
+                <div id="resultArea" class="result-area"></div>
+            </div>
+
+            <div class="platforms">
+                <div class="platform-icon"><i class="fab fa-youtube"></i> YouTube</div>
+                <div class="platform-icon"><i class="fab fa-tiktok"></i> TikTok</div>
+                <div class="platform-icon"><i class="fab fa-instagram"></i> Instagram</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
